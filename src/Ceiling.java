@@ -11,6 +11,10 @@ public class Ceiling {
     static int ceiling(int[] a, int t){
         int s = 0;
         int e = a.length - 1;
+
+        if(a[e] > t)
+            return a[e];
+
         while(s <= e){
             int m = (s + e) / 2;
 
